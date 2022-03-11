@@ -1,0 +1,172 @@
+@media only screen 
+  and (max-width: 480px) 
+  and (max-width: 1025px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  
+ {
+ 
+    img {
+      height:50px !important;
+      width:auto !important;
+    }
+}
+
+html {
+  background-color:#F0F0F0;
+  scroll-padding-top:10rem;
+}
+
+#header {
+  width:100%;
+  background-color:#008080;
+  height:100px;
+  position:fixed;
+  top:0;
+  z-index:1; 
+}
+
+
+#navbar {
+  display:flex;
+}
+
+.nav-menu {
+  position:fixed;
+  display:flex;
+  margin-left:980px;
+  top:0;  
+}
+
+li {
+  list-style:none;  
+}
+
+li > a {
+ text-decoration:none; 
+ margin-right:20px;
+ color:white;
+ font-size:1.4em;
+ font-family:"Bradley Hand ITC", Helvetica, serif;
+  font-weight:bold;
+  
+}
+
+a {
+ text-decoration:none;  
+}
+
+.grab {
+  cursor: -webkit-grab; 
+}
+
+#welcome-section {
+  margin-top:150px;
+  text-align:center;
+  height:100vh;
+  font-family:"Goudy Type", Arial, sans-serif;
+}
+
+h1 {
+  overflow: hidden;
+  border-right: .15em solid grey;
+  white-space: nowrap;
+  font-size: 2.5em;
+  width: 0;
+  animation: typing 4s steps(33) 2s 1 normal both;
+}
+
+@keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+.intro {
+  animation: flip 2s infinite;
+}
+
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
+}
+
+h2.projects-header {
+  text-align:center;
+  font-size:1.8em;
+  margin-bottom:50px;
+  font-family:"Bradley Hand ITC", "Times New Roman", serif;
+}
+
+#profile-link {
+  margin-left:10px;
+}
+
+.profile-link{
+ text-align:center; 
+}
+
+/*.project-image {
+   height:auto !important;
+   width:55% !important;
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+}*/
+
+#img1, #img3 {
+ height:auto !important;
+   width:55% !important;
+   display: block;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+#img2, #img4 {
+  height:auto !important;
+   width:60% !important;
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.projects-grid {
+  display:grid;
+  grid-template-columns:auto auto;
+  justify-items: center;
+  padding: 10px;
+  gap:10px;
+  font-size:20px;
+}
+
+p#project1.project-title, p#project2.project-title, p#project3.project-title, p#project4.project-title {
+  text-align:center;
+  color:#008080;
+}
+
+#contact-me {
+  text-align:center;
+  margin-top:70px;
+  font-size:1.8em;
+  font-family:"Bradley Hand ITC", Helvetica, serif;
+  font-weight:bold;
+}
+
+a#profile-link {
+  color: black;
+  margin-left:10px;
+}
+
+a:hover{
+  top:-6px;
+  position:relative;
+}
+
+footer {
+  background-color:#008080;
+  height:50px;
+  text-align:center;
+  color:white;
+  font-style:italic;
+  padding-top:30px;
+}
