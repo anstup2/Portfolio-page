@@ -6,9 +6,29 @@
  {
  
     img {
-      height:50px !important;
+      height:50vh !important;
       width:auto !important;
+      object-fit: cover; 
     }
+   
+    #header {
+    width:100vw !important;
+    height:140px;
+    }
+   
+   html {
+     width:100vw !important;
+   }
+   
+   li>a {
+   text-align:left !important;
+   font-size:10px !important;
+   }
+   
+   .projects-grid, footer {
+     font-size:10px !important;
+   }
+   
 }
 
 html {
@@ -33,7 +53,7 @@ html {
 .nav-menu {
   position:fixed;
   display:flex;
-  margin-left:980px;
+  margin-left:880px;
   top:0;  
 }
 
@@ -68,11 +88,11 @@ a {
 
 h1 {
   overflow: hidden;
-  border-right: .15em solid grey;
+  border-right: .10em solid grey;
   white-space: nowrap;
   font-size: 2.5em;
   width: 0;
-  animation: typing 4s steps(33) 2s 1 normal both;
+  animation: typing 4s steps(38) 2s 1 normal both;
 }
 
 @keyframes typing {
@@ -81,7 +101,7 @@ h1 {
     }
 
 .intro {
-  animation: flip 2s infinite;
+  animation: flip 4s infinite;
 }
 
 @keyframes flip {
@@ -89,6 +109,7 @@ h1 {
     transform: rotateY(360deg) 
   }
 }
+
 
 h2.projects-header {
   text-align:center;
@@ -117,22 +138,21 @@ h2.projects-header {
  height:auto !important;
    width:55% !important;
    display: block;
-  margin-left: auto;
-  margin-right: auto; 
+  margin: auto;
 }
 
 #img2, #img4 {
   height:auto !important;
-   width:60% !important;
+   width:55% !important;
    display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
 }
 
 
 .projects-grid {
   display:grid;
-  grid-template-columns:auto auto;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
   justify-items: center;
   padding: 10px;
   gap:10px;
@@ -158,8 +178,9 @@ a#profile-link {
 }
 
 a:hover{
-  top:-6px;
   position:relative;
+  top:-6px;
+  
 }
 
 footer {
